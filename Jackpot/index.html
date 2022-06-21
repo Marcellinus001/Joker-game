@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from virtual-blackjack.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jun 2022 15:09:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Virtual Blackjack</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<h1>Blackjack</h1>
+
+		<section class="winner-container hidden">
+			<h2 id="winner"></h2>
+		</section>
+
+		<h2>Dealer</h2>
+		<section id="dealerCards" class="container">
+		</section>
+
+		<h2>Player</h2>
+		<section id="playerCards" class="container">
+		</section>
+
+		<section class="container">
+			<span class="btn" id="addCard" >Add A Card</span>
+			<span class="btn" id="stand">Stand</span>
+		</section>
+
+		<section class="container">
+			<h3>Chips</h3>
+			<span id="points"></span>
+			<h3>Bet</h3>
+			<span id="bet-total"></span>
+
+		</section>
+
+		<section class="container"> 
+			<label for="bet">Place your bets (must be greater than 10): </label>
+			<input id="bet" type="text" />
+			<span class="btn" id="bet-button">Enter</span>
+			<span id="invalid-bet" class="invalid hidden">Invalid bet</span>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+<!-- Mirrored from virtual-blackjack.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 21 Jun 2022 15:09:51 GMT -->
+</html>
+

@@ -1,0 +1,162 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  width: 20%;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+h1,
+h2,
+.container,
+label {
+  flex: 1 100%;
+}
+
+h2 {
+  margin: 1% 0;
+}
+
+h1,
+h2,
+label {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#points,
+.invalid,
+#bet-total,
+h3 {
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+}
+
+.btn {
+  padding: 1% 5%;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  margin: 1%;
+}
+
+.winner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 98%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  margin: 1%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body {
+  background-color: rgb(23, 98, 80);
+  color: rgb(255, 255, 255);
+}
+
+.btn {
+  background-color: rgb(28, 59, 48);
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.winner-container {
+  background-color: rgba(28, 59, 48, 0.98);
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.hidden {
+  display: none;
+}
+
+.win {
+  color: rgb(231, 217, 70);
+}
+
+.lose {
+  color: rgb(208, 22, 50);
+}
+
+
+@media screen and (min-width: 700px) {
+  #playerCards img,
+  #dealerCards img {
+    width: 8%;
+  }
+
+  .btn {
+    padding: 1% 2.5%;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  #playerCards img,
+  #dealerCards img {
+    width: 15%;
+  }
+  h2,
+  #dealerCards,
+  #playerCards {
+    flex: 1 50%;
+  }
+
+  h1 {
+    order: -3;
+  }
+
+  #dealerCards {
+    order: -2;
+  }
+
+  #playerCards {
+    order: -1;
+  }
+}
